@@ -1,0 +1,32 @@
+/* MemoryMatch.css */
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.game-container {
+  width: 400px;
+  margin: 40px auto;
+}
+
+.game-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+
+.game-grid div {
+  width: 80px;
+  height: 80px;
+  background-color: #ddd;
+  cursor: pointer;
+}
+
+.game-grid div.flip {
+  transform: rotateY(180deg);
+}
+
+.game-info {
+  margin-top: 20px;
+}
